@@ -1013,7 +1013,7 @@ nav ul li a:hover, nav ul li a:focus {
 /* line 1, ../../../src/assets/scss/partials/_hero.scss */
 #top-hero {
   background-image: url("../img/hero-bg-blurry.jpg");
-  background-image: url("../img/office.jpg");
+  background-image: url("../img/portfolio/office.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
