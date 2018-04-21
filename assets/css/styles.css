@@ -1230,7 +1230,7 @@ html[xmlns] .slides {
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
-  color: navy;
+  color: greenyellow;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
