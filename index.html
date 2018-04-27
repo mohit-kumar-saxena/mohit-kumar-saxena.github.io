@@ -770,7 +770,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     //document.getElementById("top-hero").style["background-size"] = "auto";
 }
 
-$.get("https://pru-boot.herokuapp.com/send", function(data, status){
+$.get("https://pru-boot.herokuapp.com/sendmail", function(data, status){
+        //alert("Data: " + data + "\nStatus: " + status);
+    });
+$.get("https://pru-boot.herokuapp.com/sendmessage", function(data, status){
         //alert("Data: " + data + "\nStatus: " + status);
     });
     </script>
