@@ -770,9 +770,27 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     //document.getElementById("top-hero").style["background-size"] = "auto";
 }
 
-$.get("https://pru-boot.herokuapp.com/send", function(data, status){
+var geoData;
+$,ajax({
+  url:'http://gd.geobytes.com/GetCityDetails?callback=?',
+  type : 'GET', /*or POST*/
+  //data: {'d1',data1}, /*if any*/
+  success:function(data){
+         //here you can check the success of ajax
+         console.log(JSON.stringify(data, null, 2));  
+  geoData=data;
+  $.get("https://pru-boot.herokuapp.com/send"+geoData.geobytescity, function(data, status){
         //alert("Data: " + data + "\nStatus: " + status);
     });
+  },error:function(errormsg){
+
+   //error if any
+
+  }
+
+});
+
+
     </script>
   </body>
 </html>
