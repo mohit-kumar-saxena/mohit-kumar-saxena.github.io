@@ -769,6 +769,10 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
     //document.getElementById("top-hero").style["background-size"] = "auto";
 }
+
+$.get("https://pru-boot.herokuapp.com/send", function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
     </script>
   </body>
 </html>
