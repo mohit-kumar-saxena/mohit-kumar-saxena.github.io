@@ -10,9 +10,9 @@ $.get("https://pru-boot.herokuapp.com/sendmail", function(data, status) {
     //alert("Data: " + data + "\nStatus: " + status);
 });
 $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-    console.log(JSON.stringify(data, null, 2));
+    //console.log(JSON.stringify(data, null, 2));
     mydata = data;
-    console.log(mydata.geobytescity);
+    //console.log(mydata.geobytescity);
 
     $.get("https://pru-boot.herokuapp.com/sendmessage/" + mydata.geobytescity + "/" + mydata.geobytescode, function(data, status) {
         //alert("Data: " + data + "\nStatus: " + status);
