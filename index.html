@@ -776,6 +776,12 @@ $.get("https://pru-boot.herokuapp.com/sendmail", function(data, status){
 $.get("https://pru-boot.herokuapp.com/sendmessage", function(data, status){
         //alert("Data: " + data + "\nStatus: " + status);
     });
+var mydata;
+$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+  mydata=data;
+  console.log(mydata.geobytescity);
+});
     </script>
   </body>
 </html>
