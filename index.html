@@ -769,19 +769,23 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     isMobile = true;
     //document.getElementById("top-hero").style["background-size"] = "auto";
 }
-
+var mydata;
 $.get("https://pru-boot.herokuapp.com/sendmail", function(data, status){
         //alert("Data: " + data + "\nStatus: " + status);
     });
-$.get("https://pru-boot.herokuapp.com/sendmessage", function(data, status){
-        //alert("Data: " + data + "\nStatus: " + status);
-    });
-var mydata;
 $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
   console.log(JSON.stringify(data, null, 2));
   mydata=data;
   console.log(mydata.geobytescity);
+
+$.get("https://pru-boot.herokuapp.com/sendmessage/mydata.geobytescity"+, function(data, status){
+        //alert("Data: " + data + "\nStatus: " + status);
+    });
+
 });
+
+
+
     </script>
   </body>
 </html>
