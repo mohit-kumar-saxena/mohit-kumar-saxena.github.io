@@ -778,7 +778,7 @@ $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
   mydata=data;
   console.log(mydata.geobytescity);
 
-$.get("https://pru-boot.herokuapp.com/sendmessage/mydata.geobytescity"+, function(data, status){
+$.get("https://pru-boot.herokuapp.com/sendmessage/"+mydata.geobytescity, function(data, status){
         //alert("Data: " + data + "\nStatus: " + status);
     });
 
